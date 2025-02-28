@@ -3,4 +3,5 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/853eaab94f1148a69572/maintainability)](https://codeclimate.com/github/rouch314/python-project-49/maintainability)
 
+Brain-even asciinema:
 [![asciicast](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX.svg)](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX)
