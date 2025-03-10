@@ -4,7 +4,7 @@ from brain_games.scripts.brain_games import greet
 from brain_games.cli import welcome_user
 
 MIN_NUMBER = 1
-MAX_NUMBER = 1000
+MAX_NUMBER = 100
 
 ROUNDS_AMOUNT = 3
 
