@@ -42,4 +42,4 @@ def main():
                 print(f'{user_answer} is wrong answer ;(. Correct answer was {right_answer()}. \nLet`s try again, {name}!')
                 break
     
-    print(f'Congratulations, {name}!')
+        print(f'Congratulations, {name}!')
