@@ -40,6 +40,5 @@ def main():
         elif right_answer() != user_answer:
                 print(f'{user_answer} is wrong answer ;(. Correct answer was {right_answer()}. \nLet`s try again, {name}!')
                 break
-
-
-        print(f'Congratulations, {name}!')
+        if i == 3:
+            print(f'Congratulations, {name}!')

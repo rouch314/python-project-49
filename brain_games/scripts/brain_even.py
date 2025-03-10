@@ -38,7 +38,8 @@ def main():
 
             break
 
-        print(f'Congratulations, {name}!')
+        if i == 3:
+            print(f'Congratulations, {name}!')
 
 
 
