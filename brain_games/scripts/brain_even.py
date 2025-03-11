@@ -1,12 +1,15 @@
 import random
+
 import prompt
-from brain_games.scripts.brain_games import greet
+
 from brain_games.cli import welcome_user
+from brain_games.scripts.brain_games import greet
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 
 ROUNDS_AMOUNT = 3
+
 
 def main():
 

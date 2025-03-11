@@ -1,7 +1,9 @@
 import random
+
 import prompt
-from brain_games.scripts.brain_games import greet
+
 from brain_games.cli import welcome_user
+from brain_games.scripts.brain_games import greet
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
@@ -20,11 +22,12 @@ def main():
         random_number1 = random.randint(MIN_NUMBER, MAX_NUMBER)
         random_number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
 
-        smallest_number = min (random_number1, random_number2)
+        smallest_number = min(random_number1, random_number2)
 
         def right_answer():
-            for divisor in range (1, smallest_number + 1):
-                if random_number1 % divisor == 0 and random_number2 % divisor == 0:
+            for divisor in range(1, smallest_number + 1):
+                if (random_number1 % divisor == 0 
+                        and random_number2 % divisor == 0):
                     greatest_divisor = divisor
                 divisor += 1
             return greatest_divisor
@@ -39,7 +42,9 @@ def main():
 
             i += 1 
         elif right_answer() != user_answer:
-                print(f'{user_answer} is wrong answer ;(. Correct answer was {right_answer()}. \nLet`s try again, {name}!')
-                break
+            print(f'{user_answer} is wrong answer ;(.'
+                  f'Correct answer was {right_answer}. \n'
+                  f'Let`s try again, {name}!')
+            break
     
         print(f'Congratulations, {name}!')

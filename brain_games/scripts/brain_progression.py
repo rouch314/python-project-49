@@ -1,7 +1,9 @@
 import random
+
 import prompt
-from brain_games.scripts.brain_games import greet
+
 from brain_games.cli import welcome_user
+from brain_games.scripts.brain_games import greet
 
 MIN_NUMBER = 1
 MAX_NUMBER = 100
@@ -25,20 +27,25 @@ def main():
 
         result = random_number1
 
-        for _ in range (11):
-             result += random_number2
-             progression.append(result)             
+        for _ in range(11):
+            result += random_number2
+            progression.append(result)             
             
         hidden_index = random.randint(0, 10)
         progression[hidden_index] = '..'
         mapped_progression = ' '.join(map(str, progression))
     
         if hidden_index == 0:
-            right_answer = progression[hidden_index + 1] - (progression[hidden_index + 2] - progression[hidden_index + 1])
+            right_answer = progression[hidden_index + 1] 
+            - (progression[hidden_index + 2] 
+            - progression[hidden_index + 1])
         elif hidden_index == 10:
-            right_answer = progression[hidden_index - 1] + (progression[hidden_index - 1] - progression[hidden_index - 2])
+            right_answer = progression[hidden_index - 1] 
+            + (progression[hidden_index - 1] 
+            - progression[hidden_index - 2])
         else:
-            right_answer = (progression[hidden_index + 1] + progression[hidden_index - 1]) / 2
+            right_answer = (progression[hidden_index + 1] 
+            + progression[hidden_index - 1]) / 2
         
         print(f'Question: {mapped_progression}')
 
@@ -50,8 +57,10 @@ def main():
 
             i += 1 
         elif right_answer != user_answer:
-                print(f'{user_answer} is wrong answer ;(. Correct answer was {right_answer}. \nLet`s try again, {name}!')
-                break
+            print(f'{user_answer} is wrong answer ;(.'
+                  f'Correct answer was {right_answer}. \n'
+                  f'Let`s try again, {name}!')
+            break
     
         print(f'Congratulations, {name}!')
         
