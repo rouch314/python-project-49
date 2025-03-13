@@ -17,7 +17,7 @@ def generate_round():
     number2 = random.randint(1, 100)
     operator = random.choice(['+', '-', '*'])
     
-    question = f'{number1}{operator}{number2}'
+    question = f'{number1} {operator} {number2}'
     
     def calculate(num1, num2, operator):
         if operator == '+':
