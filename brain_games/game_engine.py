@@ -9,7 +9,7 @@ def run_game(game):
     
     for _ in range(ROUNDS_AMOUNT):
         question, right_answer = game.generate_round()
-        print(f'Question:{question}')
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         
         if user_answer != str(right_answer):
