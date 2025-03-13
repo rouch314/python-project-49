@@ -39,6 +39,7 @@ make brain-even
 make brain-gcd
 ```
 После установки пакета с помощью make package-install все команды можно выполнять без uv run (просто brain-calc, а не uv run brain-calc).
+
 Brain-even asciinema:
 [![asciicast](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX.svg)](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX)
 
