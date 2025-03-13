@@ -1,4 +1,5 @@
 import random
+
 # import prompt
 # from brain_games.scripts.brain_games import greet
 # from brain_games.cli import welcome_user
@@ -10,6 +11,7 @@ import random
 
 RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def is_prime(num):
     if num < 2:
         return False
@@ -17,6 +19,7 @@ def is_prime(num):
         if num % divisor == 0:
             return False
     return True
+
 
 def generate_round():
     number = random.randint(2, 100)

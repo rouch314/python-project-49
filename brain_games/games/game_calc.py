@@ -1,16 +1,17 @@
 import random
 
-#import prompt
+# import prompt
 
-#from brain_games.cli import welcome_user
-#from brain_games.scripts.brain_games import greet
+# from brain_games.cli import welcome_user
+# from brain_games.scripts.brain_games import greet
 
 # MIN_NUMBER = 1
 # MAX_NUMBER = 100
 
-#ROUNDS_AMOUNT = 3
+# ROUNDS_AMOUNT = 3
 
 RULE = 'What is the result of the expression?'
+
 
 def generate_round():
     number1 = random.randint(1, 100)

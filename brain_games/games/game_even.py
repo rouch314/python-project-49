@@ -1,6 +1,6 @@
 import random
 
-#import prompt
+# import prompt
 
 # from brain_games.cli import welcome_user
 # from brain_games.scripts.brain_games import greet
@@ -11,6 +11,7 @@ import random
 # ROUNDS_AMOUNT = 3
 
 RULE = 'Answer "yes" if the number is even, otherwise answer "no".' 
+
 
 def generate_round():
     number = random.randint(1, 100)

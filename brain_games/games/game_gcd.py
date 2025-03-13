@@ -12,10 +12,12 @@ import random
 
 RULE = 'Find the greatest common divisor of given numbers.'
 
+
 def gcd(a, b):
     while b:
         a, b = b, a % b
     return a
+
 
 def generate_round():
     number1 = random.randint(1, 100)
