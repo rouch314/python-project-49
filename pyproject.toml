@@ -3,7 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-authors = ["rouch314 <prophet314@gmail.com>"]
+authors = [{name = "rouch314", email = "prophet314@gmail.com"}]
 requires-python = ">=3.10"
 dependencies = [
     "prompt>=0.4.1",

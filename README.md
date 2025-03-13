@@ -3,6 +3,42 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/853eaab94f1148a69572/maintainability)](https://codeclimate.com/github/rouch314/python-project-49/maintainability)
 
+## Описание
+
+Brain games — это коллекция из 5 игр, связанных с математикой, разработанных для проверки и улучшения ваших арифметических навыков. 
+
+Игры:
+
+- Проверка, является ли число простым
+- Вставка числа в арифметическую прогрессию
+- Нахождение результата вычисления (умножение, сложение, вычитание)
+- Ответ, является ли число четным
+- Нахождение наибольшего общего делителя двух чисел
+
+## Игры
+# Чтобы начать играть, вы можете выполнить следующие команды:
+
+# Чтобы сыграть в «Проверь, является ли число простым»:
+```
+make brain-prime
+```
+# Чтобы вставить число в арифметическую прогрессию:
+```
+make brain-progression
+```
+# Чтобы найти результат вычисления:
+```
+make brain-calc
+```
+# Чтобы ответить, является ли число четным:
+```
+make brain-even
+```
+# Чтобы найти наибольший общий делитель двух чисел:
+```
+make brain-gcd
+```
+# После установки пакета с помощью make package-install все команды можно выполнять без uv run (просто brain-calc, а не uv run brain-calc).
 Brain-even asciinema:
 [![asciicast](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX.svg)](https://asciinema.org/a/kge0ZN2axBzsuR7xUskHeeYRX)
 
