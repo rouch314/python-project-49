@@ -13,7 +13,7 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 def is_prime(num):
     if num < 2:
         return False
-    for divisor in range(2, int(num + 1)):
+    for divisor in range(2, int(num)):
         if num % divisor == 0:
             return False
     return True
@@ -24,5 +24,3 @@ def generate_round():
     right_answer = 'yes' if is_prime(number) else 'no'
     
     return question, right_answer
-
-    
